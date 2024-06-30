@@ -1,0 +1,87 @@
+/* FlowchartComponent.css */
+.flex-col {
+  flex-direction: column;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #2563eb;
+}
+
+.save-button {
+  background-color: #3fc565; /* green background */
+  color: #ffffff; /* white text color */
+  border: 0.1rem solid #1c9247; /* dark green border */
+  border-radius: 0.25rem; /* slightly rounded corners */
+}
+
+.save-button:hover {
+  background-color: #1c9247; /* darker green on hover */
+  cursor: pointer;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex-grow {
+    height: auto;
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .p-2 {
+    padding: 0.5rem;
+  }
+}

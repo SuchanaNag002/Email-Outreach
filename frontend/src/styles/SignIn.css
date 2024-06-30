@@ -1,0 +1,42 @@
+/* SignIn.css */
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #1a1a1a, #333333);
+  color: white;
+  text-align: center;
+}
+
+.signin-title {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, purple, blue, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.signin-subtitle {
+  font-size: 1.5rem;
+}
+
+.signin-button {
+  background: linear-gradient(to right, blue, rgb(55, 72, 170));
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.signin-button:hover {
+  background-color: #357ae8;
+}
+
+.signin-icon {
+  margin-right: 10px;
+}

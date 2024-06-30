@@ -19,7 +19,7 @@ export async function createFlowchart(flowchartData) {
   console.log("Flowchart data being sent: ", flowchartData);
   try {
     const response = await axios.post(
-      `${API_BASE_URL}/flowcharts/`,
+      `${API_BASE_URL}/api/flowcharts/`,
       flowchartData,
       {
         headers: {
@@ -37,9 +37,7 @@ export async function createFlowchart(flowchartData) {
 // Get a specific flowchart by ID
 export async function getFlowchart(flowchartId) {
   try {
-    const response = await axios.get(
-      `${API_BASE_URL}/flowcharts/${flowchartId}`
-    );
+    const response = await axios.get(`${API_BASE_URL}/api/flowcharts/${flowchartId}`);
     return handleResponse(response);
   } catch (error) {
     console.error("Error fetching flowchart:", error);
@@ -51,7 +49,7 @@ export async function getFlowchart(flowchartId) {
 export async function updateFlowchart(flowchartId, flowchartData) {
   try {
     const response = await axios.put(
-      `${API_BASE_URL}/flowcharts/${flowchartId}`,
+      `${API_BASE_URL}api/flowcharts/${flowchartId}`,
       flowchartData,
       {
         headers: {
@@ -82,7 +80,7 @@ export async function deleteFlowchart(flowchartId) {
 // Get all flowcharts
 export async function getFlowcharts() {
   try {
-    const response = await axios.get(`${API_BASE_URL}/flowcharts`);
+    const response = await axios.get(`${API_BASE_URL}/api/flowcharts/`);
     return handleResponse(response);
   } catch (error) {
     console.error("Error fetching flowcharts:", error);
